@@ -31,11 +31,13 @@ except:
   print(2)
 finally:
   print(3)
-# asserts
-print(0)
-assert "h" != "w"
-print (1)
-assert False
-print(2)
-assert True
-print(3)
+
+# example pgm
+try:
+  print(1)
+  print(20 / 0)
+  print(2)
+except ZeroDivisionError:
+  print(3)
+finally:
+  print(4)
